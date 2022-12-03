@@ -1,4 +1,5 @@
 import './App.css';
+import StartBucksInput from './components/starbucks-input';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <StartBucksInput />
     </div>
   );
 }
