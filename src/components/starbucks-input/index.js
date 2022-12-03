@@ -1,8 +1,6 @@
 import React from 'react'
 
 const StartBucksInput = ({ name, value, onChange, error }) => {
-  const id = React.useId()
-
   const handleChange = (e) => {
     const value = e.currentTarget.value
     onChange(value)
@@ -10,8 +8,8 @@ const StartBucksInput = ({ name, value, onChange, error }) => {
 
   return (
     <>
-      <label htmlFor={id}>{name}</label>
-      <input id={id} value={value} onChange={handleChange} />
+      <label htmlFor={name}>{name}</label>
+      <input id={name} value={value} onChange={handleChange} />
       {error && <p>{error}</p>}
     </>
   )
